@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Input -->
+        <div class="input">
+            <div class="header">
+                <h1>To-Do List</h1>
+            </div>
+            <div class="form-input">
+                <!-- Input Heading -->
+                <div class="heading">
+                    <label for="heading">Heading:</label>
+                    <input type="text" id="heading" name="heading" placeholder="Judul tugas...">
+                </div>
+                <!-- Input Content -->
+                <div class="form-content">
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" rows="3" placeholder="Deskripsi tugas..."></textarea>
+                </div>
+                <!-- Tombol Tambah -->
+                <button id="addTaskBtn">Tambah Tugas</button>
+            </div>
+        </div>
+
+        <!-- Bagian Output -->
+        <div class="output">
+            <h2>Daftar Tugas</h2>
+            <div id="taskList"></div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
